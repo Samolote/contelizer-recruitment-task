@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 @media (min-width: 1024px) {
   .page {
     min-height: 100vh;

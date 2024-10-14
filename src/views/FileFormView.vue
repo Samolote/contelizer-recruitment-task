@@ -1,10 +1,10 @@
 <template>
   <div class="page">
-    <h1>This is a file form page</h1>
+    <h2>This is a file form page</h2>
   </div>
 </template>
 
-<style>
+<style lang="scss">
 @media (min-width: 1024px) {
   .page {
     min-height: 100vh;
