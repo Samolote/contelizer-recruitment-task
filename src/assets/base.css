@@ -76,19 +76,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-button {
+input {
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--color-text);
+}
+
+button,
+input::file-selector-button {
   padding: 0.6rem 1.2rem;
   border: 1px solid var(--color-border);
   border-radius: var(--base-border-radius);
   background-color: var(--color-background);
   font-family: inherit;
-  list-style: inherit;
+  font-size: inherit;
   color: var(--color-text);
   will-change: border-color;
   transition: border-color 0.4s;
   cursor: pointer;
 }
 
-button:hover {
+button:hover,
+input::file-selector-button:hover {
   border-color: var(--vt-c-accent);
 }
