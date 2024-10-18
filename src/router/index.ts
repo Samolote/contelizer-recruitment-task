@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import FileFormView from "../views/FileFormView.vue";
 import ValidatorView from "../views/ValidatorView.vue";
-import APIHandlingView from "../views/APIHandlingView.vue";
+import UserListView from "../views/UserListView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,9 +23,9 @@ const router = createRouter({
       component: ValidatorView,
     },
     {
-      path: "/api-handling",
-      name: "API Handling Example",
-      component: APIHandlingView,
+      path: "/userlist",
+      name: "Userlist view",
+      component: UserListView,
     },
   ],
 });

@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <h1>This is a page with an API Handler example</h1>
+    <h1>This is a page with an User List</h1>
   </div>
 </template>
 
