@@ -42,14 +42,14 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-  <form action="" class="form" @submit.prevent="handleSubmit">
+  <form class="form" @submit.prevent="handleSubmit">
     <div class="form__input-wrapper">
       <label for="file" class="form__file-input-label"
         >Choose a text file:</label
       >
       <input
         type="file"
-        name=""
+        name="file"
         id="file"
         class="form__file-input"
         accept=".txt"
@@ -68,7 +68,7 @@ const handleSubmit = async () => {
   </section>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .form {
   display: flex;
   flex-direction: column;
@@ -83,10 +83,9 @@ const handleSubmit = async () => {
     gap: 10px;
     margin: 40px 0 20px;
     padding: 20px;
+    border-radius: var(--base-border-radius);
     border: 1px solid var(--color-border);
     width: 100%;
-    border-radius: var(--base-border-radius);
-    background: var(--color-background);
   }
 
   &__file-input-label {
@@ -117,9 +116,8 @@ const handleSubmit = async () => {
 
   &__wrapper {
     padding: 20px;
-    border: 1px solid var(--color-border);
     border-radius: var(--base-border-radius);
-    background: var(--color-background);
+    border: 1px solid var(--color-border);
   }
 }
 </style>
