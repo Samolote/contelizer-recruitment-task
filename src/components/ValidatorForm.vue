@@ -27,6 +27,10 @@ const { isValid, peselInput, validatePesel } = usePesel();
 </template>
 
 <style scoped lang="scss">
+.form {
+  margin-bottom: 40px;
+}
+
 .output {
   width: 100%;
   max-width: 500px;
