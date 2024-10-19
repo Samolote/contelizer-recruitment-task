@@ -40,7 +40,9 @@ const startEdit = (user: User) => {
           <dd class="details-list__description">{{ user.status }}</dd>
         </div>
         <div class="details-list__button-wrapper">
-          <button @click="startEdit(user)">edit</button>
+          <button class="details-list__button" @click="startEdit(user)">
+            edit
+          </button>
         </div>
       </dl>
     </li>
@@ -49,9 +51,12 @@ const startEdit = (user: User) => {
 
 <style scoped lang="scss">
 .list {
-  padding-left: 20px;
+  padding: 0 20px;
   border-left: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
   list-style-type: none;
+  max-height: 600px;
+  overflow-y: scroll;
 
   &__item {
     padding: 20px;
@@ -70,6 +75,8 @@ const startEdit = (user: User) => {
 
   &__term {
     font-weight: 500;
+    margin-right: auto;
+
     &::after {
       content: ":";
     }
@@ -82,7 +89,11 @@ const startEdit = (user: User) => {
 
   &__button-wrapper {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+  }
+
+  &__button {
+    text-transform: capitalize;
   }
 }
 </style>
